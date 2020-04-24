@@ -1,7 +1,7 @@
 const { ApiPromise, WsProvider, Keyring } = require('@polkadot/api');
 const Config = require('../config');
 
-const toAccount = '5ELsycSf2vVGN4whjWA176J2TWzJY52PDGxTC89APeuTcbvB';
+const toAccount = '5GEEs5iCp57AgNTfDujEa6x8c6qF3LcX1WY6QEMDvHJ2n4tB';
 const amount = 100000;
 
 // dave to me
@@ -23,7 +23,7 @@ async function main() {
             if (status.isFinalized) {
                 console.log(
                     'Successful transfer of ' +
-                        randomAmount +
+                        amount +
                         ' with hash ' +
                         status.asFinalized.toHex()
                 );

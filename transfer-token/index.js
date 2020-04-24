@@ -6,11 +6,11 @@ const Config = require('../config');
 const ALICE_BOT = '5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY';
 const Token_ID =
     '0xf4169148358073831eacb40822ccfa8a7754c8fd8e5283be0dc98db8e86181ec';
-const toAccount = ALICE_BOT;
+const toAccount = '5GEEs5iCp57AgNTfDujEa6x8c6qF3LcX1WY6QEMDvHJ2n4tB';
 const amount = 100000000000;
 
 function readAccount() {
-    const obj = JSON.parse(fs.readFileSync('./wallet.json', 'utf8'));
+    const obj = JSON.parse(fs.readFileSync('../wallet.json', 'utf8'));
     const keyring = new Keyring();
     const pair = keyring.addFromJson(obj);
     pair.decodePkcs8('Qwer1234');
